@@ -1,24 +1,37 @@
 body {
-  font-family: "Montserrat"
+  font-family: "Montserrat";
+  text-align: center;
 }
 
 #title {
   background-color: #ff4c68;
   color: #FFF;
+  text-align: left;
 }
 
 .container-fluid{
-  padding: 0% 15% 0% 15%;
+  padding: 3% 15% 7%;
 }
 
-h1 {
-  font-family: "Montserrat-Black";
-  font-size: 4rem;
-  line-height: 1.5;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold"
 }
 
 h3 {
-  font-family: "Montserrat-bold"
+  font-size: 1.5rem;
+}
+
+/* Headings */
+
+.big-headings {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 /* Navigation Bar */
 .navbar{
@@ -49,20 +62,33 @@ p {
   margin: 5% 3% 5% 0
 }
 /* Title image */
+.iphone-container{
+    position: relative;
+}
+
+
 .title-img{
   width: 60%;
-  height: 80%;
+  height: 100%;
+  right: 10%;
   transform: rotate(25deg);
+  position: absolute;
 }
 
 /* Features section */
 
 #features {
-  padding: 8% 15%
+  padding: 7% 15%;
+  background-color: #FFF;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .feature-box {
-  text-align: center;
   margin: auto;
   padding: 5%
 }
@@ -74,4 +100,79 @@ p {
 
 .icon:hover{
   color: red;
+}
+
+/* Testimonial section */
+
+#testimonials {
+  background-color: #ff4c68;
+  color: #FFF
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+
+#press {
+  background-color: #ff4c68;
+  padding-bottom: 3%
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1020px) {
+  #title {
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Footer */
+#cta {
+  font-family: "Montserrat-Black"
+  background-color: #ff4c68;
+}
+
+.footer-text {
+  font-size:3.5rem;
+  color: #FFF;
+  padding: 2% 15%;
+  font-family: "Montserrat-bold";
+}
+
+#footer {
+  font-size: 1.5rem;
+  padding-top: 2%
 }
